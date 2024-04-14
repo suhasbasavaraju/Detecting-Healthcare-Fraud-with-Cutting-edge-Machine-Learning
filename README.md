@@ -14,3 +14,8 @@ Healthcare fraud represents a multifaceted problem in the U.S., encompassing var
 ## Data Understanding 
 
 
+<img src="![image](https://github.com/suhasbasavaraju/Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach/assets/89252544/fdb4d933-f1b3-474c-80eb-6f0813a81a9d)
+" width="800">
+
+
+<img src="![image](https://github.com/suhasbasavaraju/Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach/assets/89252544/06967def-ddbd-4def-abe3-eecf2e850a35)" width = 800>
