@@ -1,5 +1,8 @@
 # Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach
 
+<img src="![image](https://github.com/suhasbasavaraju/Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach/assets/89252544/fdb4d933-f1b3-474c-80eb-6f0813a81a9d)
+" width="800">
+
 ## Abstract: 
 
 This study delves into the challenge of healthcare fraud in the United States, where over the past two decades, the average individual and family insurance premiums have witnessed substantial increases. Conventional manual methods for fraud detection are proving to be inefficient and time-consuming, necessitating a shift in our approach. The project envisions a healthcare system fortified by a proactive and sustainable fraud detection strategy, contributing to elevated service quality and cost-effectiveness. Through the application of data mining and exploratory data analysis (EDA), we aim to uncover distinctive patterns and anomalies within the data. The model at the core of our investigation concentrates on binary classification tasks, harnessing advanced machine learning techniques such as logistic regression, KNN, decision trees, SVM Classifier and Boosting Classifiers in conjunction with ensemble methods. This research not only strives to effectively detect potential frauds but also endeavours to pinpoint the key features influencing such detections, providing invaluable insights for a more secure and efficient healthcare ecosystem. 
@@ -10,6 +13,4 @@ Healthcare fraud represents a multifaceted problem in the U.S., encompassing var
 
 ## Data Understanding 
 
-![image](https://github.com/suhasbasavaraju/Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach/assets/89252544/82159312-fafe-4c16-baf3-734caa5d64be)
 
-![image](https://github.com/suhasbasavaraju/Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach/assets/89252544/46f52195-2b28-418d-822f-bdfdb45debfd)
