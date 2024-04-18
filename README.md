@@ -11,4 +11,4 @@ Healthcare fraud represents a multifaceted problem in the U.S., encompassing var
 ## Data Understanding 
 
 
-<img src = "https://drive.google.com/file/d/1bKSQVzBIXZbuxAn8B73MTajSaZIDByOm/view?usp=drive_lin" width = 400>
+<img src = 'https://drive.google.com/file/d/1bKSQVzBIXZbuxAn8B73MTajSaZIDByOm/view'>
