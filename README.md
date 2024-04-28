@@ -51,6 +51,10 @@ Class imbalance, a common challenge in fraud detection, is addressed using the S
 
 For model induction, we've thoroughly explored various classifiers, including Logistic Regression, KNN, Decision Trees, Random Forest, CatBoost, AdaBoost, XGBoost, and SVM. Each model has been fine-tuned using GridSearchCV to pinpoint the optimal set of hyperparameters, thereby ensuring peak performance aligned with our fraud detection objectives.
 
+Initially, we randomly sampled a portion of the dataset for model building due to its large size. Subsequently, we conducted fine hyperparameter tuning using GridSearchCV and Cross-Validation Methods. We then selected the best performing models and trained them on the entire population dataset, evaluating and identifying the optimal model.
+
+### Model Performance on a andomly sampled dataset
+
 | Method           | Hyperper Tuning | Train_Accuracy | Train_Precision | Train_Recall | Train_FNR | Train_F1 | Train_ROC_AUC | Test_Accuracy | Test_Precision | Test_Recall | Test_FNR | Test_F1 | Test_ROC_AUC |
 |------------------|-----------------|----------------|-----------------|--------------|-----------|----------|---------------|---------------|----------------|-------------|----------|---------|--------------|
 | Logistic Regression | No | 0.69 | 0.69 | 0.68 | 0.32 | 0.69 | 0.69 | 0.69 | 0.7 | 0.67 | 0.33 | 0.69 | 0.69 |
@@ -70,4 +74,29 @@ For model induction, we've thoroughly explored various classifiers, including Lo
 | SVM Classifier | No | 0.73 | 0.72 | 0.73 | 0.27 | 0.73 | 0.73 | 0.68 | 0.68 | 0.68 | 0.32 | 0.68 | 0.68 |
 
 
+### Best performing models on the original dataset
 
+| Method          | Hyperper Tuning | Train_Accuracy | Train_Precision | Train_Recall | Train_FNR | Train_F1 | Test_Accuracy | Test_Precision | Test_Recall | Test_FNR | Test_F1 |
+|-----------------|-----------------|----------------|-----------------|--------------|-----------|----------|---------------|----------------|-------------|----------|---------|
+| XgBoost         | No              | 0.76           | 0.78            | 0.73         | 0.27      | 0.76     | 0.76          | 0.78           | 0.73        | 0.27     | 0.75    |
+| XgBoost         | Yes             | 0.77           | 0.79            | 0.74         | 0.26      | 0.77     | 0.77          | 0.79           | 0.74        | 0.26     | 0.76    |
+| CatBoost        | No              | 0.76           | 0.77            | 0.73         | 0.27      | 0.75     | 0.76          | 0.77           | 0.73        | 0.27     | 0.75    |
+| Random Forest   | Yes             | 0.96           | 0.95            | 0.97         | 0.03      | 0.96     | 0.76          | 0.76           | 0.74        | 0.26     | 0.75    |
+
+## ## Top 10 Variables
+
+- County (4.9192)
+- isInpatient (1.1099)
+- ClmProcedureCode_3893.0 (-0.5745)
+- ClmProcedureCode_9904.0 (-0.5413)
+- ClmProcedureCode_3995.0 (-0.5286)
+- ClmDiagnosisCode_53081 (-0.3636)
+- ClmDiagnosisCode_2449 (-0.3426)
+- UniquePhys (0.2961)
+- ClmDiagnosisCode_42731 (-0.2851)
+- PhysMultiRole2 (0.2543)
+
+
+## Conclusion
+
+In conclusion, our project has achieved remarkable success in our mission to enhance healthcare fraud detection in the United States within a stringent 3-month timeframe. Through the strategic application of advanced machine learning techniques, including logistic regression, KNN, decision trees, random forest, SVM, and boosting classifiers, we have surpassed our performance objectives. Notably, our XGBoost model has emerged as the frontrunner, boasting an impressive recall of 0.74, a minimal false positive rate (FPR) of 0.26, and an exceptional ROC-AUC score of 0.85. These results attest to the model's robust predictive capabilities and its capacity to discern between positive and negative classes with unparalleled accuracy.
