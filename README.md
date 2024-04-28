@@ -88,7 +88,7 @@ Initially, we randomly sampled a portion of the dataset for model building due t
 | CatBoost        | No              | 0.76           | 0.77            | 0.73         | 0.27      | 0.75     | 0.76          | 0.77           | 0.73        | 0.27     | 0.75    |
 | Random Forest   | Yes             | 0.96           | 0.95            | 0.97         | 0.03      | 0.96     | 0.76          | 0.76           | 0.74        | 0.26     | 0.75    |
 
-## ## Top 10 Variables
+## Top 10 Variables
 
 - County (4.9192)
 - isInpatient (1.1099)
