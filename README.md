@@ -2,7 +2,7 @@
 
 <div style="text-align: center;">
     <img src="https://miro.medium.com/v2/resize:fit:9856/1*DAPF6oXKMR3Hr8cGs96DnA.jpeg" alt="Image" width="500" height="300">
-</div>
+</div> 
 
 
 ## Project Overview:
