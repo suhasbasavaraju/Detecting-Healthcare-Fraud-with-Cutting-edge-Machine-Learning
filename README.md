@@ -1,5 +1,7 @@
 # Securing-Healthcare-Systems-A-Machine-Learning-based-Fraud-Detection-Approach
 
+<img src="https://miro.medium.com/v2/resize:fit:9856/1*DAPF6oXKMR3Hr8cGs96DnA.jpeg" alt="Image" width="500" height="300">
+
 ## Project Overview:
 
 This study delves into the challenge of healthcare fraud in the United States, where over the past two decades, the average individual and family insurance premiums have witnessed substantial increases. Conventional manual methods for fraud detection are proving to be inefficient and time-consuming, necessitating a shift in our approach. The project envisions a healthcare system fortified by a proactive and sustainable fraud detection strategy, contributing to elevated service quality and cost-effectiveness. Through the application of data mining and exploratory data analysis (EDA), we aim to uncover distinctive patterns and anomalies within the data. The model at the core of our investigation concentrates on binary classification tasks, harnessing advanced machine learning techniques such as logistic regression, KNN, decision trees, SVM Classifier and Boosting Classifiers in conjunction with ensemble methods. This research not only strives to effectively detect potential frauds but also endeavours to pinpoint the key features influencing such detections, providing invaluable insights for a more secure and efficient healthcare ecosystem. 
