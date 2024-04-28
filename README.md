@@ -14,10 +14,10 @@ The foundation of our study is built upon the collection of healthcare-related d
 
 The dataset comprises four sets for training and testing, providing insights into healthcare claims:
 
-1. 	Mapping Data: Contains unique provider IDs mapped with class labels indicating involvement in fraudulent activities. Test data includes only provider IDs; class labels need to be determined.
-2.	Beneficiary Data: Comprehensive information about patients, including demographics, diseases, premium details, and reimbursement data.
-3.	Inpatient Data: Details of claims filed for hospitalized patients, offering insights into inpatient healthcare interactions.
-4.	Outpatient Data: Information on claims filed for non-admitted patients, providing insights into outpatient healthcare interactions
+1. 	**Mapping Data:** Contains unique provider IDs mapped with class labels indicating involvement in fraudulent activities. Test data includes only provider IDs; class labels need to be determined.
+2.	**Beneficiary Data:** Comprehensive information about patients, including demographics, diseases, premium details, and reimbursement data.
+3.	**Inpatient Data:** Details of claims filed for hospitalized patients, offering insights into inpatient healthcare interactions.
+4.	**Outpatient Data:** Information on claims filed for non-admitted patients, providing insights into outpatient healthcare interactions
 
 ## Librarires Used
 
@@ -49,6 +49,25 @@ Class imbalance, a common challenge in fraud detection, is addressed using the S
 
 ## Model and Evaluation 
 
+For model induction, we've thoroughly explored various classifiers, including Logistic Regression, KNN, Decision Trees, Random Forest, CatBoost, AdaBoost, XGBoost, and SVM. Each model has been fine-tuned using GridSearchCV to pinpoint the optimal set of hyperparameters, thereby ensuring peak performance aligned with our fraud detection objectives.
+
+| Method           | Hyperper Tuning | Train_Accuracy | Train_Precision | Train_Recall | Train_FNR | Train_F1 | Train_ROC_AUC | Test_Accuracy | Test_Precision | Test_Recall | Test_FNR | Test_F1 | Test_ROC_AUC |
+|------------------|-----------------|----------------|-----------------|--------------|-----------|----------|---------------|---------------|----------------|-------------|----------|---------|--------------|
+| Logistic Regression | No | 0.69 | 0.69 | 0.68 | 0.32 | 0.69 | 0.69 | 0.69 | 0.7 | 0.67 | 0.33 | 0.69 | 0.69 |
+| Logistic Regression | Yes | 0.68 | 0.68 | 0.68 | 0.32 | 0.68 | 0.68 | 0.68 | 0.69 | 0.68 | 0.32 | 0.68 | 0.68 |
+| KNN | No | 0.77 | 0.73 | 0.86 | 0.14 | 0.79 | 0.77 | 0.56 | 0.55 | 0.56 | 0.44 | 0.56 | 0.56 |
+| KNN | Yes | 1 | 1 | 1 | 0 | 1 | 1 | 0.56 | 0.56 | 0.5 | 0.5 | 0.53 | 0.56 |
+| Decision Tree | No | 1 | 1 | 1 | 0 | 1 | 1 | 0.69 | 0.69 | 0.69 | 0.31 | 0.69 | 0.69 |
+| Decision Tree | Yes | 0.94 | 0.95 | 0.94 | 0.06 | 0.94 | 0.94 | 0.7 | 0.71 | 0.69 | 0.31 | 0.7 | 0.7 |
+| Random Forest | No | 1 | 1 | 1 | 0 | 1 | 1 | 0.72 | 0.74 | 0.69 | 0.31 | 0.71 | 0.72 |
+| Random Forest | Yes | 1 | 1 | 1 | 0 | 1 | 1 | 0.73 | 0.74 | 0.7 | 0.3 | 0.72 | 0.73 |
+| AdaBoost | No | 0.71 | 0.71 | 0.72 | 0.28 | 0.72 | 0.71 | 0.71 | 0.71 | 0.72 | 0.28 | 0.71 | 0.71 |
+| AdaBoost | Yes | 0.7 | 0.69 | 0.71 | 0.29 | 0.7 | 0.7 | 0.7 | 0.7 | 0.71 | 0.29 | 0.71 | 0.7 |
+| CatBoost | No | 0.75 | 0.75 | 0.73 | 0.27 | 0.74 | 0.75 | 0.74 | 0.75 | 0.72 | 0.28 | 0.74 | 0.74 |
+| CatBoost | Yes | 0.77 | 0.78 | 0.75 | 0.25 | 0.76 | 0.77 | 0.75 | 0.76 | 0.73 | 0.27 | 0.74 | 0.75 |
+| XgBoost | No | 0.78 | 0.8 | 0.75 | 0.25 | 0.77 | 0.78 | 0.75 | 0.77 | 0.72 | 0.28 | 0.75 | 0.75 |
+| XgBoost | Yes | 0.8 | 0.82 | 0.78 | 0.22 | 0.8 | 0.8 | 0.76 | 0.77 | 0.73 | 0.27 | 0.75 | 0.76 |
+| SVM Classifier | No | 0.73 | 0.72 | 0.73 | 0.27 | 0.73 | 0.73 | 0.68 | 0.68 | 0.68 | 0.32 | 0.68 | 0.68 |
 
 
 
